@@ -7,6 +7,9 @@ using Microsoft.Extensions.Logging;
 
 namespace FPLDQ.BLOG.Controllers
 {
+    /// <summary>
+    /// 获取日期接口
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -23,6 +26,10 @@ namespace FPLDQ.BLOG.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// 获取随机数
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
